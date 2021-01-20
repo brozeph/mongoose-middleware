@@ -6,9 +6,9 @@ export default (mongoose) => {
 
 	function page (query, options) {
 		return new Promise(function (resolve, reject) {
-			let count = estimatedDocumentCount ? query.model.estimatedDocumentCount : query.model.countDocuments;
+			let countMethod = estimatedDocumentCount ? 'estimatedDocumentCount' : 'countDocuments';
 
-			return count(query._conditions, function (err, total) {
+			return query.model[countMethod](query._conditions, (err, total) => {
 				if (err) {
 					return reject(err);
 				}

@@ -1,3 +1,7 @@
+# v3.1.1 / 2020-01-20
+
+* Adjusted way that count method is called on model to account for a Mongoose runtime error
+
 # v3.1.0 / 2020-01-19
 
 * Added support for `countDocuments` instead of `estimatedDocumentCount` when using page
