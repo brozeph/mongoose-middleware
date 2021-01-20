@@ -1,4 +1,4 @@
-# v3.0.1 / 2020-01-19
+# v3.1.0 / 2020-01-19
 
 * Added support for `countDocuments` instead of `estimatedDocumentCount` when using page
 

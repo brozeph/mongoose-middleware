@@ -1,6 +1,6 @@
 export default (mongoose) => {
 	let
-	estimatedDocumentCount = true,
+		estimatedDocumentCount = true,
 		maxDocs = -1,
 		self = {};
 
